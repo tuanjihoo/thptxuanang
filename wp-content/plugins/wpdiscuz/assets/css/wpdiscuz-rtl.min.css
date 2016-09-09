@@ -1,0 +1,64 @@
+#wpcomm .wc-comment-title{ text-align:left;}
+#wpcomm .wc-field-comment .wc-field-textarea{margin-left:2px;margin-right:65px}
+#wpcomm .wc-field-comment .wc-field-textarea .commentTextMaxLength{left:5px; right:inherit; }
+#wpcomm .wc-form-wrapper .avatar{margin-top:0}
+#wpcomm .wc-field-comment .wc-field-avatararea{float:right}
+#wpcomm .wc-form-footer { margin-right: 65px;  margin-left: 0px; }
+#wpcomm.wpdiscuz_no_avatar .wc-form-footer{ margin-right: 0px;  margin-left: 0px; }
+#wpcomm .wc-author-data { float: right;text-align: right;}
+#wpcomm .wc-form-submit { float: left;text-align: left;}
+#wpcomm .wc-field-captcha{ float:right; text-align: left;}
+#wpcomm .wc_notification_checkboxes{ text-align:left;}
+#wpcomm .wc-field-captcha .wc-captcha-label{ float:left; text-align:left;}
+#wpcomm .wc-field-captcha .wc-captcha-input{ float:right; }
+#wpcomm .wc-field-submit { clear:right; text-align:left; }
+#wpcomm .wc-comment .wc-comment-right{margin-left:0;margin-right:70px}
+#wpcomm .wc-comment-author{float:right; text-align: right;}
+#wpcomm .wc-comment-date{float:left}
+#wpcomm .wc-comment-footer .wc-vote-result{margin-right:0;margin-left:5px}
+#wpcomm .wc-toggle{float:left}
+#wpcomm .wc-comment .wc-comment-left{ float: right; }
+#wpcomm .wc-comment-link{ float: left; text-align: left; padding: 0 10px 0 0 ; }
+#wpcomm .wc-comment-text{ text-align: right; }
+#wpcomm .wc-comment-footer{ text-align: right; }
+#wpcomm .wpdiscuz-subscribe-form-button{ float: right; }
+#wpcomm .wpdiscuz-subscribe-form-option{ float: right; padding-left: 5px; padding-right: 0;}
+#wpcomm .wpdiscuz-subscribe-form-intro{ float: right; padding: 3px 1px 3px 10px;}
+#wpcomm .wpdiscuz-subscribe-form-email{ float: right; }
+#wpcomm .wc-reply{ margin-right: 40px; margin-left: 0px!important; }
+#wpcomm .wpdiscuz_no_avatar .wpdiscuz-item wc-field-textarea{margin-right:0}
+#wpcomm .wpdiscuz_no_avatar .wc-comment-right{margin-right:0}
+
+#wpcomm .wc_comment_level-3{ margin-right: 40px!important; margin-left: 0px!important;}
+#wpcomm .wc_comment_level-4 { margin-right: 40px!important; margin-left: 0px!important; }
+#wpcomm .wc_comment_level-5 { margin-right: 40px!important; margin-left: 0px!important; }
+#wpcomm .wc_comment_level-6 { margin-right: 40px!important; margin-left: 0px!important; }
+#wpcomm .wc_comment_level-7 { margin-right: 40px!important; margin-left: 0px!important; }
+#wpcomm .wc_comment_level-8 { margin-right: 40px!important; margin-left: 0px!important; }
+#wpcomm .wc_comment_level-9 { margin-right: 40px!important; margin-left: 0px!important; }
+#wpcomm .wc_comment_level-10 { margin-right: 40px!important; margin-left: 0px!important; }
+@media screen and (max-width:600px){
+	#wpcomm .wc-field-comment .wc-field-textarea{ margin-right: 30px; }
+	#wpcomm .wc-form-footer{ margin-right:30px; margin-left:0px; }
+	#wpcomm.wpdiscuz_no_avatar .wc-form-footer{ margin-right:0px; margin-left:0px; }
+	#wpcomm .wc-reply{ margin-right:25px!important }
+	#wpcomm .wc_comment_level-4{ margin-right:0px!important; }
+	#wpcomm .wc_comment_level-5{ margin-right:0px!important; }
+	#wpcomm .wc_comment_level-6{ margin-right:0px!important; }
+	#wpcomm .wc_comment_level-7{ margin-right:0px!important; }
+	#wpcomm .wc_comment_level-8{ margin-right:0px!important; }
+	#wpcomm .wc_comment_level-9{ margin-right:0px!important; }
+	#wpcomm .wc_comment_level-10{ margin-right:0px!important; }
+	#wpcomm .wc-comment .wc-comment-right{ margin-right: 55px!important; }
+	#wpcomm .wc-reply .wc-comment-right{ margin-right: 55px!important; }
+}
+@media screen and (max-width:420px){
+	#wpcomm .wc-field-comment .wc-field-textarea{ margin-right: 0px; }
+	#wpcomm .wc-form-footer{ margin-right:0px; }
+	#wpcomm .wc-comment .wc-comment-right, #wpcomm .wc-reply .wc-comment-right{ margin-right:0px!important; }
+	#wpcomm .wc-comment .wc-comment-left .avatar{ float:right!important; }
+	#wpcomm .wc-comment .wc-comment-left .wc-comment-label{ margin-right:33px; }
+}
+.wpdiscuz_clear_right{ clear:left; }
+.wpdiscuz_clear_left{ clear:right; }
+#wpcomm .wpdiscuz-textarea-wrap .wpdiscuz-textarea-foot{ text-align:left; }

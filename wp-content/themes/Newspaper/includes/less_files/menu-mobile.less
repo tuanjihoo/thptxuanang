@@ -1,0 +1,256 @@
+/* custom stuff */
+
+#td-outer-wrap {
+  position: relative;
+  overflow: hidden;
+//  width: 100%;
+}
+
+/* hide mobile nav */
+.td-mobile-nav-wrap {
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 80%;
+  height: 100%;
+  background-color: #f5f5f5;
+//  z-index: 1;
+}
+
+.td-content-wrap {
+  position: relative;
+//  top: 0;
+//  left: 0;
+}
+
+/* toggle button */
+#td-top-mobile-toggle {
+  display: none;
+
+
+  /* responsive phone */
+  @media (max-width: @responsive_p_phone_max) {
+    display: inline-block;
+    position: relative;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  i {
+    font-size: 26px;
+    width: 54px;
+    line-height: 54px;
+    height: 54px;
+    display: inline-block;
+    padding-top: 1px;
+    color: #fff;
+  }
+}
+
+
+/*  ----------------------------------------------------------------------------
+    mobile menu style
+*/
+
+/* close */
+.td-mobile-close {
+  position: relative;
+
+  a {
+    display: block;
+    width: 100%;
+    padding: 15px 0 17px 0;
+    text-align: center;
+    background-color: @td_theme_color;
+    color:white;
+    font-size: 17px;
+    font-family: @font3;
+    z-index: -1;
+
+    &:hover {
+      text-decoration: none !important;
+      color: white;
+      opacity: 0.8;
+    }
+  }
+
+  .td-nav-triangle {
+    position: absolute;
+    right: 0;
+    top:19px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7.5px 8px 7.5px 0;
+    border-color: transparent #ffffff transparent transparent;
+  }
+
+}
+
+/* menu content */
+.td-mobile-content {
+
+  // font awesome in menu
+  .fa {
+    margin-right: 10px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    box-shadow: none;
+  }
+  li {
+    float:none;
+    margin-left: 0;
+
+    a {
+      display: block;
+      //border-top: 1px solid white;
+      border-bottom: 1px solid #e8e8e8;
+      line-height: 21px;
+      font-size: 14px;
+      font-family: @font3;
+      color: #1e1e1e;
+      margin-left: 0;
+      padding: 12px 13px 11px 17px;
+
+
+      &:hover {
+        text-decoration: none !important;
+        color: @td_theme_color;
+        background-color: #fafafa !important;
+      }
+    }
+  }
+
+  div > ul > li > a {
+    text-transform: uppercase;
+  }
+
+  .td-icon-menu-down{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    width: 10px;
+    z-index: 1000;
+    font-size: 16px;
+    padding: 12px 28px 8px 13px;
+    float: right;
+    color: #666;
+  }
+
+  /* first submenu */
+  .sub-menu {
+    .td-icon-menu-down {
+      font-size: 11px;
+      padding-top: 11px;
+      right: 3px;
+      color: #999;
+    }
+
+    a {
+      padding: 9px 8px 9px 36px !important;
+      line-height: 19px;
+      font-size: 13px;
+    }
+
+    /* 2nd level submenu */
+    .sub-menu {
+      a {
+        padding-left: 55px !important;
+      }
+
+      /* 3rd level submenu */
+      .sub-menu {
+        a {
+          padding-left: 74px !important;
+        }
+      }
+    }
+  }
+
+
+
+  /* hide the icons */
+  .menu_icon {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: @responsive_p_phone_max) {
+
+  #td-outer-wrap {
+    //display: inline-block;
+    vertical-align: bottom;
+  }
+
+  html, body {
+    //overflow-x: hidden;/*trebe pt IE*/
+  }
+
+
+
+  /* reposition the main menu */
+  #td-mobile-nav {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+
+    .menu-item-has-children {
+      a {
+        width: 100%;
+        z-index: 1;
+      }
+    }
+
+    .td-link-element-after {
+      position: relative;
+    }
+  }
+
+
+
+  /*makes the trasition*/
+  .td-transition-content-and-menu {
+    //-webkit-transition: -webkit-transform 500ms ease;
+    //-moz-transition: -moz-transform 500ms ease;
+    //-o-transition: -o-transform 500ms ease;
+    //transition: transform 500ms ease;
+    //transition: left 500ms ease;
+
+
+    //-webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  //.td-menu-mob-open-menu = the class that will be added (or removed) from body element
+  .td-menu-mob-open-menu {
+    .td-mobile-nav-wrap {
+      left:0;
+      //.transform (~"translate3d(100%, 0, 0)");
+      //.transform (~"translate(100%, 0)");
+
+      //-webkit-backface-visibility: hidden; // fix for android ?
+      //backface-visibility: hidden;
+
+    }
+
+    .td-content-wrap {
+      left:80%;
+      //.transform (~"translate(80%, 0)");
+      //.transform (~"translate3d(80%, 0, 0)");
+      //-webkit-backface-visibility: hidden; // fix for android ?
+      //backface-visibility: hidden;
+    }
+  }
+}
+
+

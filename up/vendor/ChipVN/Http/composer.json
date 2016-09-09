@@ -1,0 +1,21 @@
+{
+    "minimum-stability" : "dev",
+	"name": "ptcong/php-http-class",
+	"description": "Http class used to sending request and get response like a browser.",
+	"keywords": ["php", "http", "request", "curl", "fsockopen"],
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "Phan Thanh Cong",
+            "email": "ptcong90@gmail.com",
+            "homepage": "http://ptcong.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.0"
+    },
+	"autoload": {
+		"classmap": ["ChipVN/Http"]
+	},
+    "target-dir": "ChipVN/Http"
+}

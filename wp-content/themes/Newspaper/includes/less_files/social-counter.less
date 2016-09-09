@@ -1,0 +1,127 @@
+/*  ----------------------------------------------------------------------------
+    social counter plugin
+*/
+.td_block_social_counter {
+  font-family: @font1;
+  font-weight: bold;
+  font-size: 11px;
+  color: #fff;
+  padding-bottom: 27px;
+
+  .td-sp {
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 1px;
+      height: 16px;
+      background-color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      right: -1px;
+      top: 8px;
+    }
+  }
+}
+.td_social_type {
+  height: 32px;
+  margin-bottom: 10px;
+  position: relative;
+  .transition(background-color 0.20s cubic-bezier(0, 0, 0.58, 1) 0s);
+
+  &:hover {
+    background-color: #222;
+  }
+
+  div {
+    display: inline-block;
+  }
+
+  .td_social_info {
+    padding: 0 9px;
+    position: relative;
+    top: -12px;
+  }
+
+  .td_social_info_name {
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      display: none;
+    }
+  }
+
+  .td_social_number {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 9px;
+  }
+
+  .td_social_button {
+    float: right;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 14px;
+    margin-top: 8px;
+    top: 9px;
+    height: 16px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    a {
+      &:after {
+        content: "";
+        display: block;
+        height: 32px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 324px;
+
+        /* responsive landscape tablet */
+        @media (min-width: @responsive_l_tablet_min) and (max-width: @responsive_l_tablet_max) {
+          width: 300px;
+        }
+
+        /* responsive portrait tablet */
+        @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+          width: 228px;
+        }
+
+        /* responsive portrait phone */
+        @media (max-width: @responsive_p_phone_max) {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.td_social_facebook {
+  background-color: #516eab;
+}
+.td_social_rss {
+  background-color: #ff6600;
+}
+.td_social_soundcloud {
+  background-color: #ff5419;
+}
+.td_social_twitter {
+  background-color: #29c5f6;
+}
+.td_social_vimeo {
+  background-color: #006599;
+}
+.td_social_youtube {
+  background-color: #e14e42;
+}
+.td_social_googleplus {
+  background-color: #eb4026;
+}
+.td_social_instagram {
+  background-color: #417096;
+}

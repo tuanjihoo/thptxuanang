@@ -1,0 +1,27 @@
+Change logs
+
+*** Version 5.1.1; May 23, 2014
+    - Update Flickr API (SSL required)
+    - Update vendor, ChipVN library
+
+*** Version 5.1.2; May 27, 2014
+    - Fixed Picasa plugin to get URL not resized, use account by email
+
+*** Version 5.1.3; Jun 05, 2014
+    - Update Picasa plugin to avoid BadAuthentication; WebLoginRequired
+
+*** Version 5.2.0; Jun 19, 2014
+    - Fixed Plugins Abstract (wrong split arguments)
+    - New: Postimage plugin for uploading images to postimage.org
+
+*** Version 5.2.1; Jun 19, 2014
+    - Changed Postimage to get full size instead of thumbnail
+
+*** Version 5.2.2
+    - New: Option to avoid watermark to small images
+
+*** Version 5.2.4
+    - Fixed: Imageshack plugin because Imageshack change API results
+
+*** Version 5.2.5; Jul 16, 2014
+- Update: File Cache when delete directory cache session
